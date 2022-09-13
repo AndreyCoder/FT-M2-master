@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./index.js" type="text/javascript" async></script>
+  <link rel="stylesheet" href="./index.css">
+  <title>HomeWork Ajax</title>
+</head>
+<body>
+  <div class="contenedor">
+    <h2>Lista Amigos</h2>
+
+    <div class="input-group">
+      <input class="input" id="input" type="text" name="text" required>
+        <label class="user-label">Buscar amigo</label>
+        <button class="button" id='search'>Buscar</button>
+        <span id='amigo'></span>
+      </input>
+      
+      <input class="input" id="inputDelete" type="text" required>
+        <label class="user-label">Elimina amigo</label>
+        <button class="button" id='delete'>Delete</button>
+        <span id='success'></span>
+      </input>
+    
+      <button class="btn" id='boton'>Ver Amigos</button>
+      <ul class="lista" id='lista'>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

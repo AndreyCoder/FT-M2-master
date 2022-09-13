@@ -1,0 +1,39 @@
+// Mixins acá
+
+.nav(@flex-d, @align-i, @bg) {
+  padding: 1rem;
+  display: flex;
+  flex-direction: @flex-d;
+  align-items: @align-i;
+  background-color: @bg;
+}
+
+.ul(@flex-d, @align-i, @justify-c, @width, @font-s) {
+  display: flex;
+  margin: 10px;
+  flex-direction: @flex-d;
+  align-items: @align-i;
+  justify-content: @justify-c;
+  width: @width;
+  font-size: @font-s;
+}
+
+.a(@text-d, @color) {
+  display: flex;
+  text-decoration: @text-d;
+  color: @color;
+}
+
+.btn(@color, @bg, @border) {
+  display: inline;
+  padding: 1.25rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: @bg;
+  color: @color;
+  border-radius: @border;
+  &:hover {
+    background-color: @color;
+    color: @bg;
+  }
+}
